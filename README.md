@@ -12,6 +12,12 @@ Guarda na memória os primeiros números ímpares, iniciando no endereço 0x20. 
 <img width="1366" height="721" alt="image" src="https://github.com/user-attachments/assets/01e26c0d-0733-4af5-ace8-9b378fee9452" />
   
 - Problema_2:
-Gera os primeiros números da sequeência de Fibonacci e escreve cada número na memória a partir do endereço 0x30.
+Gera os primeiros números da sequência de Fibonacci e escreve cada número na memória a partir do endereço 0x30.
 O programa inicia com os dois primeiros números de Fibonacci, 1 e 1. O programa calcula o próximo número somando os dois números anteriores a cada volta feita e, cada resultado é colocado em sequência na memória, um do lado do outro (pulando de 2 em 2, pois cada número ocupa uma palavra).
 <img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/58ba484a-0525-4fe4-b0c4-ed6bb02dca02" />
+
+- Problema_3:
+Percorre os números que foram guardados entre os endereços 0x40 e 0x80 para encontrar o maior inteiro positivo. O programa lê o inteiro atual e, ignora se ele não for positivo e compara com o inteiro maior que foi encontrado.
+Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais alto encontrado é colocado no endereço 0x90.
+<img width="1366" height="727" alt="image" src="https://github.com/user-attachments/assets/6177582c-1fa6-4789-922f-9a375d98fc17" />
+
