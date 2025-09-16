@@ -25,7 +25,7 @@ Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais a
 
 
 - Problema_8:
-- O programa faz a leitura da String armazenada na memória, passa por cada caracter até chegar ao fim e em seguida manda para saída o testo sugerido.
-- ![0a67f22c-6c80-4bb3-a9ac-508492c8a9af](https://github.com/user-attachments/assets/5f759806-aff3-4069-8799-ecde17b2c6f7)
+- O programa faz a leitura da String armazenada na memória, passa por cada caracter até chegar ao final e por fim manda o texto sugerido para a saída.
+![0a67f22c-6c80-4bb3-a9ac-508492c8a9af](https://github.com/user-attachments/assets/5f759806-aff3-4069-8799-ecde17b2c6f7)
 
 
