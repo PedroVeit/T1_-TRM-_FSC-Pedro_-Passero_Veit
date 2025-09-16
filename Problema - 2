@@ -1,0 +1,26 @@
+main
+    ldw v0,zr,N        
+    add v1,zr,0x0030    
+    add v2,zr,1         
+    add v3,zr,1         
+
+loop
+    stw v2,v1           
+    add v1,v1,2        
+    sub v0,v0,1         
+
+    sub v4,v4
+    add v4,v2           
+    add v4,v3          
+    sub v2,v2
+    add v2,v3           
+    sub v3,v3
+    add v3,v4           
+
+    bne v0,zr,loop      
+
+end
+    hlt
+
+N
+    8  
