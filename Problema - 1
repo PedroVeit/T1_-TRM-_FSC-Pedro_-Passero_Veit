@@ -1,5 +1,5 @@
 main
-    ldw v0,zr,nro     
+    ldw v0,zr,N     
     add v1,zr,0x0020 
     add v2,zr,1      
 
@@ -12,5 +12,5 @@ loop
 end
     hlt              
 
-nro
+N
     9  
