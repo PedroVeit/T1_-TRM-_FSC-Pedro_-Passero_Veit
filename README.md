@@ -21,3 +21,8 @@ Percorre os números que foram guardados entre os endereços 0x40 e 0x80 para en
 Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais alto encontrado é colocado no endereço 0x90.
 <img width="1366" height="727" alt="image" src="https://github.com/user-attachments/assets/6177582c-1fa6-4789-922f-9a375d98fc17" />
 
+- Problema_8:
+- O programa faz a leitura da String armazenada na memória, passa por cada caracter até chegar ao fim e em seguida manda para saída o testo sugerido.
+- ![0a67f22c-6c80-4bb3-a9ac-508492c8a9af](https://github.com/user-attachments/assets/5f759806-aff3-4069-8799-ecde17b2c6f7)
+
+
