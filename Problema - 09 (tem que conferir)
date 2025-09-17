@@ -1,7 +1,7 @@
 main
 
     ldw v0,zr,0x60
-    beq v0,zr,sim
+    beq v0,zr,true
     add a0,zr,0x70
     add a1,zr,0x70
     sub v3,v0,1
@@ -15,22 +15,22 @@ adv
 
 comp
 
-    bge a0,a1,ok
+    bge a0,a1,true
     ldb v1,a0 
     ldb v2,a1
-    bne v1,v2,nao
+    bne v1,v2,false
     add a0,a0,1
     sub a1,a1,1
     beq zr,zr,comp
 
-sim
+true
 
-    add v0,zr,83
+    add v0,zr,84
     stw v0,zr,0xF006
     hlt
 
-nao
+false
 
-    add v0,zr,78 
+    add v0,zr,70
     stw v0,zr,0xF006
     hlt
