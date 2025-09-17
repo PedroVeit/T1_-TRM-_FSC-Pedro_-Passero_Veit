@@ -1,0 +1,36 @@
+main
+
+    ldw v0,zr,0x60
+    beq v0,zr,sim
+    add a0,zr,0x70
+    add a1,zr,0x70
+    sub v3,v0,1
+
+adv
+
+    beq v3,zr,comp
+    add a1,a1,1
+    sub v3,v3,1
+    beq zr,zr,adv
+
+comp
+
+    bge a0,a1,ok
+    ldb v1,a0 
+    ldb v2,a1
+    bne v1,v2,nao
+    add a0,a0,1
+    sub a1,a1,1
+    beq zr,zr,comp
+
+sim
+
+    add v0,zr,83
+    stw v0,zr,0xF006
+    hlt
+
+nao
+
+    add v0,zr,78 
+    stw v0,zr,0xF006
+    hlt
