@@ -1,0 +1,24 @@
+main
+    add R2, R_ZERO, 0x0040
+    add R3, R_ZERO, 0x0061
+    add R4, R_ZERO, 1
+fill
+    stb R4, R2
+    add R2, R2, 1
+    add R4, R4, 1
+    bne R2, R3, fill
+
+    add R_A0, R_ZERO, 0x0040
+    add R_A1, R_ZERO, 0x0060
+loop
+    bge R_A0, R_A1, end
+    lbu R_V0, R_A0
+    lbu R_V1, R_A1
+    stb R_V1, R_A0
+    stb R_V0, R_A1
+    add R_A0, R_A0, 1
+    sub R_A1, R_A1, 1
+    bne R_ZERO, R_ZERO, loop
+
+end
+    hlt
