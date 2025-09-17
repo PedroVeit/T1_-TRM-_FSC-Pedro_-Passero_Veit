@@ -31,6 +31,8 @@ Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais a
 
 - Problema_9:
 - O código verifica se uma palavra é um palíndromo, lendo em 0x60 o tamanho da palavra sugerida, depois seleciona os caracteres a partir do 0x70. Compara a letra da esquerda com a da direita, avançando até o centro. Se tudo der certo o simulador apresenta a letra "T" de True, caso contrário apresenta a letra "F" de False.
+<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/e9c1baf5-e97f-43cb-a4f7-0b2d59c03f42" />
+
 
 
 - Prblema_10:
