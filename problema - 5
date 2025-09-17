@@ -1,0 +1,47 @@
+main
+    add R0, R_ZERO, 0x0060
+    add R2, R_ZERO, 3
+
+input_loop
+    ldw R3, R_ZERO, 0xf010
+    stw R3, R0
+    add R0, R0, 2
+    sub R2, R2, 1
+    bne R2, R_ZERO, input_loop
+
+    add R0, R_ZERO, 0x0060
+    add R2, R_ZERO, 0x0066
+    add R7, R_ZERO, 10
+
+for_i
+    beq R0, R2, end
+
+    sub R1, R1, R1
+    add R1, R1, R0
+    add R1, R1, 2
+
+for_j
+    beq R1, R2, next_i
+
+    ldw R3, R0
+    ldw R4, R1
+
+    sub R5, R5, R5
+    add R5, R3, R4
+
+    beq R5, R7, found
+
+    add R1, R1, 2
+    bne R_ZERO, R_ZERO, for_j
+
+next_i
+    add R0, R0, 2
+    bne R_ZERO, R_ZERO, for_i
+
+found
+    stw R0, R_ZERO, 0x0080
+    stw R1, R_ZERO, 0x0090
+    hlt
+
+end
+    hlt
