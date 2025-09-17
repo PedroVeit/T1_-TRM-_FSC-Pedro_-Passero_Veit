@@ -23,6 +23,13 @@ O programa inicia com os dois primeiros números de Fibonacci, 1 e 1. O programa
 Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais alto encontrado é colocado no endereço 0x90.
 <img width="1366" height="727" alt="image" src="https://github.com/user-attachments/assets/6177582c-1fa6-4789-922f-9a375d98fc17" />
 
+- Problema_4:
+- Solicita ao usuário para digitar 5 números inteiros. Guarda esses valores na memória a partir do endereço 0x40 e, "copia" os inteiros para ondereço de 0x90.
+Se o número é par, soma 1 para transformá-lo em um número ímpar.
+Se for ímpar, mantém como está.
+No print do programa abaixo utilizamos os valores: 2, 4, 6, 8 e 10.
+<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/e21df61b-9dd0-479c-8964-92921f75b3a5" />
+
 
 - Problema_8:
 - O programa faz a leitura da String armazenada na memória, passa por cada caracter até chegar ao final e por fim manda o texto sugerido para a saída.
