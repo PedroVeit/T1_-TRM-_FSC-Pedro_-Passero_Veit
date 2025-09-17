@@ -1,0 +1,27 @@
+main
+    add R0, R_ZERO, 0x0040
+    add R2, R_ZERO, 0x004A
+
+input_loop
+    ldw R3, R_ZERO, 0xf010
+    stw R3, R0
+    add R0, R0, 2
+    bne R0, R2, input_loop
+
+    add R0, R_ZERO, 0x0040
+    add R1, R_ZERO, 0x0090
+    add R2, R_ZERO, 0x004A
+
+loop
+    ldw R3, R0
+    and R4, R3, 1
+    bne R4, R_ZERO, ok
+    add R3, R3, 1
+ok
+    stw R3, R1
+    add R0, R0, 2
+    add R1, R1, 2
+    bne R0, R2, loop
+
+end
+    hlt
