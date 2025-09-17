@@ -29,3 +29,11 @@ Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais a
 ![0a67f22c-6c80-4bb3-a9ac-508492c8a9af](https://github.com/user-attachments/assets/5f759806-aff3-4069-8799-ecde17b2c6f7)
 
 
+- Problema_9:
+- O código verifica se uma palavra é um palíndromo, lendo em 0x60 o tamanho da palavra sugerida, depois seleciona os caracteres a partir do 0x70. Compara a letra da esquerda com a da direita, avançando até o centro. Se tudo der certo o simulador apresenta a letra "T" de True, caso contrário apresenta a letra "F" de False.
+
+
+- Prblema_10:
+- O programa processa os primeiros N caracteres de um texto, localizado na memória a partir do endereço 0x60. Sua função é contar a ocorrência de cada vogal ('a', 'e', 'i', 'o', 'u'), independentemente de serem maiúsculas ou minúsculas. Para cada vogal encontrada, um contador específico é incrementado. No final, os valores totais de cada contador são armazenados em locais de memória pré-determinados:
+
+
