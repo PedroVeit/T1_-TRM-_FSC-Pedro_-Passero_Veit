@@ -41,7 +41,9 @@ No programa utilizamos como entrada os valores: 2, 4, 6, 8 e 10 novamente.
 
 
 
-- Prblema_10:
-- O programa processa os primeiros N caracteres de um texto, localizado na memória a partir do endereço 0x60. Sua função é contar a ocorrência de cada vogal ('a', 'e', 'i', 'o', 'u'), independentemente de serem maiúsculas ou minúsculas. Para cada vogal encontrada, um contador específico é incrementado. No final, os valores totais de cada contador são armazenados em locais de memória pré-determinados:
+- Prblema_10: Processa os primeiros N caracteres de um texto, localizado na memória a partir do endereço 0x60. Conta a ocorrência de cada vogal ('a', 'e', 'i', 'o', 'u') independentemente de serem maiúsculas ou minúsculas.
+Para cada vogal encontrada, um contador específico é incrementado.
+<img width="1366" height="722" alt="image" src="https://github.com/user-attachments/assets/33548f5c-5f86-48e5-98f0-b02416c940d7" />
+
 
 
