@@ -5,20 +5,17 @@ main
 
 loop
     ldw v2,v1            
-
     sub v4,v4            
     tlt v4,v2            
     beq v4,zr,advance   
-
     sub v5,v5            
     add v5,v0
     tlt v5,v2            
     beq v5,zr,advance    
-
     sub v0,v0           
     add v0,v2
 
-advance
+pass
     add v1,v1,2         
     bne v1,v3,loop       
 
