@@ -1,0 +1,81 @@
+main
+    ldw a2,zr,0x58      
+    add a0,zr,0x60      
+    add v0,zr,0         
+    add v1,zr,0         
+    add v2,zr,0         
+    add v3,zr,0         
+    add v4,zr,0         
+
+loop
+    beq a2,zr,done
+    ldb a1,a0
+    add a0,a0,1
+    sub a2,a2,1
+    add r8,zr,65        
+    bne a1,r8,verifica_a_minusculo
+    add v0,v0,1
+    beq zr,zr,loop
+
+verifica_a_minusculo
+    add r8,zr,97        
+    bne a1,r8,verifica_e_maiusculo
+    add v0,v0,1
+    beq zr,zr,loop
+
+verifica_e_maiusculo
+    add r8,zr,69        
+    bne a1,r8,verifica_e_minusculo
+    add v1,v1,1
+    beq zr,zr,loop
+
+verifica_e_minusculo
+    add r8,zr,101       
+    bne a1,r8,verifica_i_maiusculo
+    add v1,v1,1
+    beq zr,zr,loop
+
+verifica_i_maiusculo
+    add r8,zr,73        
+    bne a1,r8,verifica_i_minusculo
+    add v2,v2,1
+    beq zr,zr,loop
+
+verifica_i_minusculo
+    add r8,zr,105       
+    bne a1,r8,verifica_o_maiusculo
+    add v2,v2,1
+    beq zr,zr,loop
+
+verifica_o_maiusculo
+    add r8,zr,79        
+    bne a1,r8,verifica_o_minusculo
+    add v3,v3,1
+    beq zr,zr,loop
+
+verifica_o_minusculo
+    add r8,zr,111       
+    bne a1,r8,verifica_u_maiusculo
+    add v3,v3,1
+    beq zr,zr,loop
+
+verifica_u_maiusculo
+    add r8,zr,85        
+    bne a1,r8,verifica_u_minusculo
+    add v4,v4,1
+    beq zr,zr,loop
+
+verifica_u_minusculo
+    add r8,zr,117       
+    bne a1,r8,loop
+    add v4,v4,1
+    beq zr,zr,loop
+
+done
+    stw v0,zr,0x40
+    stw v1,zr,0x44
+    stw v2,zr,0x48
+    stw v3,zr,0x50
+    stw v4,zr,0x52
+
+    hlt
