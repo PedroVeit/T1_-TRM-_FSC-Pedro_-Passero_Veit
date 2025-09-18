@@ -1,0 +1,48 @@
+main
+    add v0,zr,0x0060       
+    add v2,zr,5           
+
+input_n
+    ldw v3,zr,0xf010       
+    stw v3,v0              
+    add v0,v0,2           
+    sub v2,v2,1
+    bne v2,zr,input_n
+
+    add v0,zr,0x0060       
+    add v2,zr,0x0072       
+    add v7,zr,10           
+
+loop_i
+    beq v0,v2,end
+
+    sub v1,v1
+    add v1,v0
+    add v1,v1,2            
+
+loop_j
+    beq v1,v2,next
+
+    ldw v3,v0              
+    ldw v4,v1              
+
+    sub v5,v5
+    add v5,v3
+    add v5,v4             
+
+    beq v5,v7,return
+
+    add v1,v1,2
+    beq zr,zr,loop_j
+
+next
+    add v0,v0,2
+    beq zr,zr,loop_i
+
+return
+    stw v0,zr,0x0080       
+    stw v1,zr,0x0090       
+    hlt
+
+end
+    hlt
