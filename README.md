@@ -17,7 +17,8 @@ O programa inicia com os dois primeiros números de Fibonacci, 1 e 1. O programa
 
 - Problema_3: Percorre os números que foram guardados entre os endereços 0x40 e 0x80 para encontrar o maior inteiro positivo. O programa lê o inteiro atual e, ignora se ele não for positivo e compara com o inteiro maior que foi encontrado.
 Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais alto encontrado é colocado no endereço 0x90.
-<img width="1366" height="727" alt="image" src="https://github.com/user-attachments/assets/6177582c-1fa6-4789-922f-9a375d98fc17" />
+<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/5c0a2a98-f3df-4f4d-904e-564e52576e4e" />
+
 
 - Problema_4: Solicita ao usuário para digitar 5 números inteiros e, guarda esses valores na memória a partir do endereço 0x40, "copia" os inteiros para ondereço de 0x90.
 Se o número é par, soma 1 para transformá-lo em um número ímpar.
