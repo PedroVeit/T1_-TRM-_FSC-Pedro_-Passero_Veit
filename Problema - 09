@@ -9,7 +9,7 @@ pass
     beq v3,zr,comp
     add a1,a1,1
     sub v3,v3,1
-    beq zr,zr,adv
+    beq zr,zr,pass
 
 comp
     bge a0,a1,true
