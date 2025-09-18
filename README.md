@@ -14,17 +14,15 @@ Explicação do funcionamento dos códigos:
 O programa inicia com os dois primeiros números de Fibonacci, 1 e 1. O programa calcula o próximo número somando os dois números anteriores a cada volta feita e, cada resultado é colocado em sequência na memória, um do lado do outro (pulando de 2 em 2, pois cada número ocupa uma palavra).
 <img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/58ba484a-0525-4fe4-b0c4-ed6bb02dca02" />
 
-
 - Problema_3: Percorre os números que foram guardados entre os endereços 0x40 e 0x80 para encontrar o maior inteiro positivo. O programa lê o inteiro atual e, ignora se ele não for positivo e compara com o inteiro maior que foi encontrado.
 Caso seja maior, o número é atualizado e, no fim do programa, o inteiro mais alto encontrado é colocado no endereço 0x90.
 <img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/5c0a2a98-f3df-4f4d-904e-564e52576e4e" />
-
 
 - Problema_4: Solicita ao usuário para digitar 5 números inteiros e, guarda esses valores na memória a partir do endereço 0x40, "copia" os inteiros para ondereço de 0x90.
 Se o número é par, soma 1 para transformá-lo em um número ímpar.
 Se for ímpar, mantém como está.
 No print do programa abaixo utilizamos os valores: 2, 4, 6, 8 e 10.
-<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/e21df61b-9dd0-479c-8964-92921f75b3a5" />
+<img width="1366" height="725" alt="image" src="https://github.com/user-attachments/assets/e60364b0-8f71-431c-965a-bbc336f025fc" />
 
 - Problema_5: Procura entre os endereços 0x60 e 0x70 por dois números cuja soma seja igual a 10. O programa percorre as posições em pares e, quando encontra um par que soma 10, ele salva os endereços das duas posições no endereço 0x80 e 0x90.
 Se não existir nenhum par válido, apenas encerra a execução. 
