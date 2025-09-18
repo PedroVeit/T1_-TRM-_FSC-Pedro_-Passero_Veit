@@ -1,11 +1,13 @@
 main
-	add a0,zr,text		
+	add a0,zr,text	
+
 loop
 	ldb v0,a0		
 	stw v0,zr,0xf006	
 	beq v0,zr,end		
 	add a0,a0,1		
-	beq zr,zr,loop		
+	beq zr,zr,loop	
+
 end
 	add v0,zr,10		
 	stw v0,zr,0xf006
