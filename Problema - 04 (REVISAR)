@@ -1,27 +1,27 @@
 main
-    add R0, R_ZERO, 0x0040
-    add R2, R_ZERO, 0x004A
+    add v0,zr,0x0040     
+    add v2,zr,0x004a 
 
-input_loop
-    ldw R3, R_ZERO, 0xf010
-    stw R3, R0
-    add R0, R0, 2
-    bne R0, R2, input_loop
-
-    add R0, R_ZERO, 0x0040
-    add R1, R_ZERO, 0x0090
-    add R2, R_ZERO, 0x004A
+input_n
+    ldw v3,zr,0xf010
+    stw v3,v0
+    add v0,v0,2
+    bne v0,v2,input_n
+    add v0,zr,0x0040 
+    add v1,zr,0x0090
+    add v2,zr,0x004a     
 
 loop
-    ldw R3, R0
-    and R4, R3, 1
-    bne R4, R_ZERO, ok
-    add R3, R3, 1
-ok
-    stw R3, R1
-    add R0, R0, 2
-    add R1, R1, 2
-    bne R0, R2, loop
+    ldw v3,v0            
+    and v4,v3,1          
+    bne v4,zr,return         
+    add v3,v3,1         
+
+return
+    stw v3,v1           
+    add v0,v0,2          
+    add v1,v1,2          
+    bne v0,v2,loop       
 
 end
-    hlt
+    hlt                  
