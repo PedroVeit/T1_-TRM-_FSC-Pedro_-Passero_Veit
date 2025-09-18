@@ -36,10 +36,9 @@ O programa foi criado dentro do endereço 0x40 e 0x60, invertendo os valores.
 - Problema_8: O programa faz a leitura da String armazenada na memória, passa por cada caracter até chegar ao final e por fim manda o texto sugerido para a saída.
 ![0a67f22c-6c80-4bb3-a9ac-508492c8a9af](https://github.com/user-attachments/assets/5f759806-aff3-4069-8799-ecde17b2c6f7)
 
-
 - Problema_9: O código verifica se uma palavra é um palíndromo, lendo em 0x60 o tamanho da palavra sugerida, depois seleciona os caracteres a partir do 0x70. Compara a letra da esquerda com a da direita, avançando até o centro. Se tudo der certo o simulador apresenta a letra "T" de True, caso contrário apresenta a letra "F" de False.
-<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/e9c1baf5-e97f-43cb-a4f7-0b2d59c03f42" />
+<img width="1366" height="725" alt="image" src="https://github.com/user-attachments/assets/9a8913d2-b561-4eab-9a81-b22263d71765" />
 
 - Prblema_10: Processa os primeiros N caracteres de um texto, localizado na memória a partir do endereço 0x60. Conta a ocorrência de cada vogal ('a', 'e', 'i', 'o', 'u') independentemente de serem maiúsculas ou minúsculas.
 Para cada vogal encontrada, um contador específico é incrementado.
-<img width="1366" height="722" alt="image" src="https://github.com/user-attachments/assets/33548f5c-5f86-48e5-98f0-b02416c940d7" />
+<img width="1366" height="726" alt="image" src="https://github.com/user-attachments/assets/fe7cdc75-5233-4956-8be7-b2616c38bafa" />
